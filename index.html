@@ -108,7 +108,7 @@
             <section id="portfolio">
                 <article>
 
-
+                    <h2 class=" tcenter h2 mrg-50 ">Portfolio</h2>
 
                     <div class="container" id="mix-container">
 
@@ -172,6 +172,9 @@
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17526.335407423314!2d-46.78678449581217!3d-23.534259063746987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4619c888290b360c!2sSenac+Osasco!5e0!3m2!1spt-BR!2sbr!4v1559591081771!5m2!1spt-BR!2sbr"
                     width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>  -->
+            <a id="subirTopo">
+                <br> subir
+              </a>
         </footer>
     </div>
 
@@ -189,6 +192,27 @@
 
     <!-- INSERE SCRIPT PERSONALIZADO -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+        
+        jQuery("#subirTopo").hide();
+        
+        jQuery('a#subirTopo').click(function () {
+                 jQuery('body,html').animate({
+                   scrollTop: 0
+                 }, 800);
+                return false;
+           });
+        
+        jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                 } else {
+                    jQuery('#subirTopo').fadeOut();
+                 }
+             });
+        });
+        </script>
 
 </body>
 
