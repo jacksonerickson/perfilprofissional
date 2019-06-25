@@ -167,7 +167,7 @@ h1#logotipo {
 }
 
 h1#logotipo a {
-    background: url("../images/Meu LogotipoFoto2.png");
+    background: url("../images/Meu LogotipoFoto3.png");
     width: 146px;
     display: block;
     height: 48px;
@@ -185,6 +185,9 @@ h1#logotipo a span {
 }
 
 /*Menu*/
+
+
+
 
 ul.menu {
     list-style: none;
@@ -204,7 +207,7 @@ ul.menu.vertical li {
 ul.menu li a {
     display: block;
     padding: 14px 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background: transparent;
     text-decoration: none;
     overflow: hidden;
@@ -218,30 +221,39 @@ ul.menu li a:hover {
     color: #f7f7f7;
 }
 
-.menusec ul li{
-    position:; 
-    top:14px 16px; 
-    left:0;
-    display:inline-block;
-}
-
-
-
-.menuocult {
-    position: absolute;
+/* Menu Secundario ou Sub-Menu */
+.menusec ul {
     display: none;
-}
+   }
 
-.menuocult ul:hover , .menuocult ul.over{
+.menusec li {
+    position: relative;
+    background:transparent; 
+    list-style: none;
+    padding: 10px;
+   }
+
+.menusec li a {
+    color: white;
+  }
+
+.menusec ul li {
+    display:block; 
+   }
+   
+   
+.menusec li:hover ul {
     display: block;
-}
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    z-index: 500;
+    min-width: 100px;
+   }
 
 
-.menuocult li ul li {
-    border:1px solid #c0c0c0; 
-    display:block;
-    width:150px;
-}
+
 
 
 
@@ -255,25 +267,33 @@ ul.menu li a:hover {
     .w25 {
         width: 50%;
     }
+    .ban {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 411px) {
     .w25 {
         width: 100%;
     }
+    .ban {
+        width: 100%;
+    }
 }
+
+
 
 .nav1{
     width:100%;
     height:100px;
-    background-color: #b3b3b3;
+    background:url("../images/mosaic.png");
 }
 
 
 .ban {
-    background: url("../images/banner.jpg");
+    background: url("../images/Técnico-Informática-Parada-Inglesa-800x445.jpg");
     width: 100%;
-    display: inline-block;
+    display:;
     height: 500px;
     background-size:cover;
       
@@ -282,20 +302,33 @@ ul.menu li a:hover {
 .back {
     width:100%;
     height: 200px;
-    background-color: #d3d3d3;
+    background:url("../images/crossline-lines.png");
 }
 
 .back2 {
     width:100%;
-    height: 200px;
-    background-color: #e9e8e8;
+    height: 800px;
+    background:url("../images/white-waves.png");
 }
+
+.back3 {
+    width:100%;
+    height: 200px;
+    background:url("../images/pipes.png");
+}
+
+.back4 {
+    width:100%;
+    height: 200px;
+    background:url("");
+}
+
 #subirTopo {
     text-decoration: none;
-    background: rgba(30,156,161,.9);
+    background: rgba(211, 211, 211, 0.9);
     bottom: 30px;
     right: 30px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     cursor: pointer;
     padding: 15px;
@@ -311,3 +344,5 @@ ul.menu li a:hover {
     #subirTopo:hover {
     opacity:1;
     }
+
+    

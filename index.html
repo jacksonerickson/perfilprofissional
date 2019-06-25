@@ -30,30 +30,32 @@
 
     <div>
         <header>
-            <div class="container" >
-                <div class="tcenter">
+            <div class="" >
+                <div class="">
                     <nav class="nav1">
                         
-                <div class="w40 fright">
-                        <h1 id="logotipo">
-                            <a href="#" title="Jackson Erickson">
-                                <span>
-                                    Jackson Erickson
-                                </span>  
-                            </a>
-                        </h1>
-                    </div>
-                        <ul class="menu horizontal menusec">
+                        <div class="w40 fright">
+                            <h1 id="logotipo">
+                                <a href="#" title="Jackson Erickson">
+                                    <span>
+                                        Jackson Erickson
+                                    </span>  
+                                </a>
+                            </h1>
+                        </div>
+                        <ul class="menu horizontal container menusec">
                                 <li class="fleft pdd-25" id="home">
                                     <a href="##home" title="Home">
                                         Home
                                     </a>
                                 </li>
-                                <li class="fleft pdd-25">
-                                    <a href="##sobre-mim" title="Sobre Mim">Sobre Mim</a>
-                                        <ul class="menuocult">
-                                            <li><a href="#">Conhecimentos</a></li>
-                                            <li><a href="#">Clientes</a></li>
+                                <li class="fleft pdd-25 ">
+                                    <a href="##sobre-mim" title="Sobre Mim" class="">Sobre Mim</a>
+                                        <ul class="">
+                                            <li><a href="##conhecimentos" title="Conhecimentos" class="fleft pdd-25">Conhecimentos</a></li>
+                                            <li><a href="##portfolio" title="Aprendizagem Academica" class="fleft pdd-25">Aprendizagem Academica</a></li>
+                                            <li><a href="##habilidades" title="Habilidades" class="fleft pdd-25">Habilidades</a></li>
+                                            <li><a href="##qualidades" title="Qualidades" class="fleft pdd-25">Qualidades</a></li>
                                         </ul>
                                 </li>
                                 <li class="fleft pdd-25">
@@ -78,10 +80,12 @@
                 <article class="">
                     <div class="container">
                         <h3 class="tcenter">Jackson Erickson</h3>
+                        <div class="tcenter"><img src="/images/jackson.png"></div>
                         <div class="tcenter">
                             <p>Aluno atualmente do Senac Osasco</p>
-                            <p>se preparando para o mercado de trabalho</p>
-                            <p>interessado em conceitos básicos na área de <strong>TI</strong></p>
+                            <p>se preparando para o mercado de trabalho.</p>
+                            <p></p>
+                            <p>Interessado em conceitos básicos na área de <strong>TI</strong></p>
                             
                             
                             <!--<p><a href="#">Leia mais...</a></p>-->
@@ -92,59 +96,83 @@
                     </div>
                 </article>
             </section>
-            <section id="conhecimentos" class="container">
+            <section id="conhecimentos" class=" container">
                 <article class="tcenter">
                     <h2>Conhecimentos</h2>
                     <p> Básico em HTML</p>
                     <p> Intermediario em Hardware</p>
-                    <p> Intermediario em Windows 10</p>
-                    <p> Básico em Windows Server 2016</p>
-                    <p> Básico em Adobe Photoshop Cc 2018</p>
-                    <p> Básico em Adobe Illustraitor 2018</p>
+                    
                     <p> </p>
 
                 </article>
             </section>
-            <section id="portfolio">
-                <article>
+            <section class="back2" id="portfolio">
+                <article class="">
 
-                    <h2 class=" tcenter h2 mrg-50 ">Portfolio</h2>
+                    <h2 class=" tcenter h2 mrg-50 ">Aprendizagem Academica</h2>
 
-                    <div class="container" id="mix-container">
+                    <div class="tcenter container" id="mix-container">
 
                         <div>
-                            <button type="button" data-filter="all">All</button>
-                            <button type="button" data-filter=".category-a">Category A</button>
-                            <button type="button" data-filter=".category-b">Category B</button>
-                            <button type="button" data-filter=".category-c">Category C</button>
+                            <button type="button" title="Tudo" data-filter="all">Tudo</button>
+                            <button type="button" title="Adobe" data-filter=".category-a">Adobe</button>
+                            <button type="button" title="Windows" data-filter=".category-b">Windows</button>
+                            <button type="button" title="HTML" data-filter=".category-c">HTML</button>
 
-                            <button type="button" data-sort="order:asc">Ascending</button>
+                            <!--<button type="button" data-sort="order:asc">Ascending</button>
                             <button type="button" data-sort="order:descending">Descending</button>
-                            <button type="button" data-sort="random">Random</button>
+                            <button type="button" data-sort="random">Random</button>-->
                         </div>
 
-                        <div class="mix category-a w25 fleft" data-order="1">
-                            <img src="https://dummyimage.com/400x400/ccc/fff.jpg&text=Portfolio+(400x400)" width="100%">
+
+                        <!--As imagens estão em resolução 400x400-->
+                        <div class="mix category-b w25 fleft" data-order="1">
+                            <img src="/images/Win101.png" width="100%">
                         </div>
-                        <div class="mix category-b w25 fleft" data-order="2">
-                            <img src="https://dummyimage.com/400x400/000/fff.jpg&text=Portfolio+(400x400)" width="100%">
+                        <div class="mix category-a w25 fleft" data-order="2">
+                            <img src="/images/Photo4.png" width="100%">
                         </div>
-                        <div class="mix category-b category-c w25 fleft" data-order="3">
-                            <img src="https://dummyimage.com/400x400/e3e/fff.jpg&text=Portfolio+(400x400)" width="100%">
+                        <div class="mix category-c w25 fleft" data-order="3">
+                            <img src="/images/Dreamweaver1.png" width="100%">
                         </div>
                         <div class="mix category-a category-d w25 fleft" data-order="4">
-                            <img src="https://dummyimage.com/400x400/f00/000.jpg&text=Portfolio+(400x400)" width="100%">
+                            <img src="/images/Photo3.png" width="100%">
                         </div>
-                        <div class="mix category-c w25 fleft" data-order="4">
-                            <img src="https://dummyimage.com/400x400/f00/000.jpg&text=Portfolio+(400x400)" width="100%">
+                        <div class="mix category-c w25 fleft" data-order="5">
+                            <img src="/images/html1.png" width="100%">
+                        </div>
+                        <div class="mix category-b w25 fleft" data-order="6">
+                                <img src="/images/WinServer1.png" width="100%">
                         </div>
                         <div class="clear"></div>
                     </div>
                 </article>
             </section>
-            <section id="clientes">
-                <article>
-                    Clientes
+            <section class="" id="habilidades">
+                <article class="tcenter h2 mrg-100">
+                    <div class="container"></div>
+                   <h2>Habilidades</h2>
+                        <p>Microsoft PowerPoint <strong>-</strong> Intermediario</p>
+                        <p>Microsoft Visio <strong>-</strong> Básico</p>
+                        <p>Microsoft Windows 10 <strong>-</strong> Intermediario</p>
+                        <p>Microsoft Windows Server 2016 <strong>-</strong> Básico</p>
+                        <p>Adobe Illustraitor CC 2018 <strong>-</strong> Básico</p>
+                        <p>Adobe Photoshop CC 2018 <strong>-</strong> Básico</p>
+
+
+                </article>
+            </section>
+            <section class="back3 container" id="qualidades">
+                <article class="tcenter h2 mrg-100">
+                    <div class="container"></div>
+                   <h2>Qualidades</h2>
+                  
+                        <p> <strong>Facilidade em Aprendizagem</strong> </p>
+                        <p> <strong>Ótimo desempenho em trabalho em grupo</strong> </p>
+                        <p> <strong>Disposição e Apto para qualquer objetivo</strong> </p>
+                        
+                        
+
                 </article>
             </section>
         </main>
@@ -162,8 +190,15 @@
                     <p><strong>Mande-me um e-mail</strong></p>
                     <p><a href="mailto:jacksonerickson93@gmail.com">jacksonerickson93@gmail.com</a></p>
                 </div>
-                <div class="w50 fright">
+                <div class="container w50 tcenter fleft">
                     Formulário
+                <form class="">
+                   <label class="w50 fleft">Nome</label> <input id="nomeid" type="text" required="required"></input>
+                   <label class="w50 fleft">E-mail</label><input id="emailid" type="email" required="required"></input>
+                   <label class="w50 fleft">Telefone</label><input id="telid" type="tel" required="required"></input>
+                   <label class="w50 fleft">Motivo de Contato</label><input id="mcid" type="text" placeholder="Escreva..." required="required"></input>
+                   <input class="w50" type="submit" onclick="Enviar();"; value="Enviar">
+                </form>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -173,7 +208,7 @@
                     width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>  -->
             <a id="subirTopo">
-                <br> subir
+                <br> inicio
               </a>
         </footer>
     </div>
@@ -205,7 +240,7 @@
            });
         
         jQuery(window).scroll(function () {
-                 if (jQuery(this).scrollTop() > 1000) {
+                 if (jQuery(this).scrollTop() > 300) {
                     jQuery('#subirTopo').fadeIn();
                  } else {
                     jQuery('#subirTopo').fadeOut();
